@@ -110,7 +110,7 @@ for (var i = 0; i <= endTimeComparisonValues.length; i++) {
 ss.insertSheet("CPC Analysis", 1); 
 let sheet2 = ss.getSheetByName('CPC Analysis'); 
 
-// SET HEADER NAMES FOR COLUMNS 
+// SET HEADER NAMES AND FUNCTIONS FOR ANALYSIS 
 let dateColumnHeader2 = sheet2.getRange("B1"); 
 dateColumnHeader2.setValue("Date"); 
 let dateColumnValue2 = sheet2.getRange("B2"); 
@@ -128,7 +128,19 @@ endColumnValue2.setFormula("=FILTER(Sheet1!F2:F, Sheet1!F2:F<>\"\")");
 
 let durationColumnHeader2 = sheet2.getRange("E1"); 
 durationColumnHeader2.setValue("Duration"); 
+let lastRow2 = sheet2.getLastRow(); 
+let durationRange = sheet2.getRange(2,5, lastRow2);
+// durationRange.setNumberFormat("HH:mm:ss"); 
+
+ for (var i = 0; i <= lastRow2; i++) {
+   let durationCell = sheet2.getRange(2+i,5); 
+   let d = 2+i;
+   let c = 2+i; 
+   durationCell.setFormula("=D" + d + "-C" + c);
+ }; 
 
 
+  
 
-}
+}; 
+
