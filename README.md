@@ -3,7 +3,7 @@ This is the Google App Script I use to automate Google Workspace products.
 
 Never used Google's App Script before? 
 
-# CPC Analysis
+## CPC Analysis
 Click on *Extentions* > *Apps Script*. Delete the *myFunction()* that is already in the editor and copy/paste my code in. 
 
 Now click on *Save* (or Command + S) and then *Run* (or Commandn + R). 
