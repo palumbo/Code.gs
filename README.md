@@ -1,7 +1,7 @@
 # Code.gs
 This is the Google App Script I use to automate Google Workspace products. 
 
-Never used Google's App Script before? 
+Never used Google's App Script before? Below you'll find basic instructions on how to use these scripts in Sheets, Docs, and GMail. 
 
 ## CPC Analysis
 Click on *Extentions* > *Apps Script*. Delete the *myFunction()* that is already in the editor and copy/paste my code in. 
