@@ -139,6 +139,15 @@ let durationRange = sheet2.getRange(2,5, lastRow2);
    durationCell.setFormula("=D" + d + "-C" + c);
  }; 
 
+let orderColumnsHeader = sheet2.getRange("F1"); 
+orderColumnsHeader.setValue('Orders'); 
+
+for (var i = 0; i <= lastRow2; i++) {
+  // =countif(Sheet1!C2:C, B2)
+  let ordersCell = sheet2.getRange(2+i, 6); 
+  let b = 2+i; 
+  ordersCell.setFormula("=COUNTIF(Sheet1!C2:C, B" + b + ")"); 
+}
 
   
 
