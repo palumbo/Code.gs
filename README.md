@@ -1,5 +1,5 @@
 # Code.gs
-This is the Google App Script I use to automate Google Workspace products. 
+This is the Google App Script I use to automate routines taking place in Google Workspace products using Google's App Script (aka JavaScript). 
 
 Never used Google's App Script before? Below you'll find basic instructions on how to use these scripts in Sheets, Docs, and GMail. 
 
